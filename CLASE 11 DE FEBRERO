@@ -1,1 +1,10 @@
+# Clase Microeconomia 11/02/2021
+/ base de datos Belleza.dta
+reg logsalario AEM ADM
+reg logsalario AEM ADM if= mujer ==1
+reg logsalario AEM ADM if mujer ==0 # (hombre)
+reg log ADM AEM exper sindicato salud negro casado servicios educ if mujer== 0
+
+
+test(mujer=if)( muj_sat=0 )( muj_per =0)( muj_htotales=0 )
 
